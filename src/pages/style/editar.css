@@ -5,14 +5,19 @@ h2 {
     text-align: center;
 }
 
+.content {
+    background-color: #333;
+}
+
 form {
     /* background: #333; */
-    width: 80%;
+    width: 50%;
     margin: auto;
-    padding: 12px;
-    border-radius: 4px;
+    padding: 8px;
+    border-radius: 5px;
     border: 1px solid var(--bs-gray-400);
-    margin-bottom: 14vh;
+    margin-bottom: 10vh;
+    background-color: #333;
 }
 
 form div {
@@ -21,11 +26,11 @@ form div {
 }
 
 form .campo {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 form div input {
-    padding: 6px;
+    padding: 4px;
     border-radius: 4px;
     border: 0;
     font-size: 16px;
@@ -51,12 +56,3 @@ form button {
     color: #333;
     width: max-content;
 }
-
-/* form button:first-child {
-    background: tomato;
-    margin-right: 12px;
-}
-
-form button:last-child {
-    background: #41ff6d;
-} */
