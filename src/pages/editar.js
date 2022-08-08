@@ -2,24 +2,19 @@ import { produtosService } from '../service/produtos-service.js';
 import Produto from '../utils/Produto.js';
 
 const formulario = document.forms.namedItem('editar');
+const codProd = document.getElementById("codigoProduto");
 
 const url = new URL(window.location);
 const id = url.searchParams.get('id');
 
 function preencheCamposFormulario(produto) {
-    // formulario.marca.value = carro.marca;
-    // formulario.modelo.value = carro.modelo;
-    // formulario.ano.value = carro.ano;
-    // formulario.preco.value = carro.preco;
-    // formulario.quilometragem.value = carro.quilometragem;
-    // formulario.url_foto.value = carro.url_foto;
-
     formulario.marca.value = produto.marca;
     formulario.nome.value = produto.nome;
     formulario.compra.value = produto.compra;
     formulario.quantidade.value = produto.quantidade;
     formulario.url_foto.value = produto.url_foto;
     formulario.preco.value = produto.preco;
+    codProd.innerHTML = produto.id;
 };
 
 window.onload = () => {
